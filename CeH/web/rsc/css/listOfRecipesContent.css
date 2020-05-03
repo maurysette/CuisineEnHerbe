@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 avr. 2020, 15:54:27
+    Author     : bst
+*/
+#list-recipe-Title{
+    margin: 3em auto;
+    text-align: center;
+    font-size: 2em;
+
+}
+#container-listrecipes{
+    display: flex;
+    flex-wrap: wrap;
+}
+#container-listrecipes img{
+    width: 10em;
+
+}
+#recipe-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0 1em;
+
+}
+#recipeInfos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ens{
+    color: black;
+    text-decoration: none;
+}

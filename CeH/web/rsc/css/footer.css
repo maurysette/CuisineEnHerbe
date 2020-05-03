@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 22 avr. 2020, 11:30:13
+    Author     : stag
+*/
+
+h3{
+    color: red;
+}
+#footer{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    bottom:0;  /* on le colle en bas */ 
+    width:100%; 
+    height:100px;   /* Hauteur du pied de page */ 
+    text-align: center;
+}
+#footer div{
+    border-top:  black solid 1px;
+    flex: 1;
+}
+#navigation li{
+    list-style: none;
+}
+#Logo img{
+    width:3em;
+    height:3em;
+}

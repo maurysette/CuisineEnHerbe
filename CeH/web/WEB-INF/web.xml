@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <!-- Temps de la session active -->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <!-- Mise en place des directives des libs-->
+    <jsp-config>
+        <jsp-property-group>
+            <url-pattern>*.jsp</url-pattern>
+            <include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+        </jsp-property-group>
+    </jsp-config>
+    <!-- Affichage des pages dans l'ordre -->
+    <welcome-file-list>
+        <welcome-file>/WEB-INF/template/homeContent/home.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- Mise en place du routing -->
+    <!-- Page d'acceuil -->
+    <servlet>
+        <servlet-name>HomeServlet</servlet-name>
+        <servlet-class>homeServlet.Home</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HomeServlet</servlet-name>
+        <url-pattern>/accueil</url-pattern>
+    </servlet-mapping>
+    <!-- Page d'inscription -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>registerServlet.Register</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/inscription</url-pattern>
+    </servlet-mapping>
+    <!-- Page de la liste des recettes -->
+    <servlet>
+        <servlet-name>listOfRecipesServlet</servlet-name>
+        <servlet-class>listOfRecipesServlet.ListOfRecipes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>listOfRecipesServlet</servlet-name>
+        <url-pattern>/NosRecettes</url-pattern>
+    </servlet-mapping>
+    <!-- Page d'une recettes -->
+    <servlet>
+        <servlet-name>recipeServlet</servlet-name>
+        <servlet-class>recipeServlet.Recipe</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>recipeServlet</servlet-name>
+        <url-pattern>/recette</url-pattern>
+    </servlet-mapping>
+    <!-- Page des administrateurs -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>adminServlet.Admin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+    <!-- Page création des recettes -->
+    <servlet>
+        <servlet-name>CreateRecipesServlet</servlet-name>
+        <servlet-class>createRecipesServlet.CreateRecipes</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateRecipesServlet</servlet-name>
+        <url-pattern>/creation-recette</url-pattern>
+    </servlet-mapping>
+</web-app>
