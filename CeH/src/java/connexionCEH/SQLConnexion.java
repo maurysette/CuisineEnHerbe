@@ -21,11 +21,11 @@ import java.util.logging.Logger;
 public final class SQLConnexion {
     // MES ATTRIBUTS
 
-    private final static String HOST = "localhost"; // L'ip de l'hôte
-    private final static String PORT = "3306"; // Le PORT de connexion, 3306 par défaut sur MySQL
-    private final static String BASE = "site_recette"; // La BASE de données sur laquelle se connecter
-    private final static String LOGIN = "cours"; // Le LOGIN
-    private final static String PASSWORD = "cours"; // Le mot de passe
+    private final static String HOST = ""; // L'ip de l'hôte
+    private final static String PORT = ""; // Le PORT de connexion, 3306 par défaut sur MySQL
+    private final static String BASE = ""; // La BASE de données sur laquelle se connecter
+    private final static String LOGIN = ""; // Le LOGIN
+    private final static String PASSWORD = ""; // Le mot de passe
     private static Connection connection = null;
     private final static String URL = "jdbc:mysql://" + HOST + ":" + PORT + "/" + BASE;
 
