@@ -15,7 +15,6 @@ import connexionCEH.SQLConnexion;
 public interface Dao<Q> {
 
     Connection CONNECTION = SQLConnexion.getInstance();
-// cree une fonction qui fasse un tirage aléatoire
 
     public abstract Q getUser();
 
